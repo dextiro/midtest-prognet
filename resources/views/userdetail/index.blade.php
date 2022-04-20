@@ -51,8 +51,8 @@
 					@foreach($userdetails as $userdetail)
 					<tr>		
 						<td>{{ $no++ }}</td>
-						<td>{{ $userdetail->id_mahasiswa}}</td>
-                        <td>{{ $userdetail->id_kelompokstudi}}</td>
+						<td>{{ $userdetail->mahasiswa->nama}}</td>
+                        <td>{{ $userdetail->kelompok_studi->nama}}</td>
 
 						<td class="text-center">
                             <a href="{{  url('userdetail/edit/'.$userdetail->id) }}" class="btn btn-sm" style="margin-bottom:5px;">
